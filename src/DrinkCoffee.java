@@ -1,2 +1,7 @@
-public class DrinkCoffee {
-}
+//public class DrinkCoffee {
+//
+//    void drinkCoffee(Coffee coffee){
+//
+//        if (coffee.getTemp())
+//    }
+//}
