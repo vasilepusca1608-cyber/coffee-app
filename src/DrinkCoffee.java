@@ -1,13 +1,17 @@
 public class DrinkCoffee {
 
-    void drinkCoffee(Coffee coffee){
+    void drinkCoffee(Coffee coffee) throws TemperaturaException, ConcentrationException {
 
         if (coffee.getTemp() > 65) {
-            throw new TemperaturaException(coffee.getTemp(), "Cofeaua e prea fierbinte. O aruncam!")
+            throw new TemperaturaException(coffee.getTemp(), "Cafeaua e prea fierbinte. O aruncam!");
+        } else {
+            System.out.println("t: " + coffee.getTemp());
         }
 
-        if (coffee.getConc() > 55){
-            throw new ConcentrationException(coffee.getConc(), "concentratia cafeleie e prea mare. O aruncam!")
+        if (coffee.getConc() > 55) {
+            throw new ConcentrationException(coffee.getConc(), "Concentratia cafeleie e prea mare. O aruncam!");
+        } else {
+            System.out.println("c: " + coffee.getConc());
         }
     }
 }

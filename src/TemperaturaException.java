@@ -4,7 +4,8 @@ public class TemperaturaException extends Exception{
 
     //constructors
 
-    public TemperaturaException(int t){
+    public TemperaturaException(int t, String msg){
+        super(msg);
         this.t = t;
     }
 
